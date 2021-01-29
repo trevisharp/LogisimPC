@@ -65,21 +65,46 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(270,320)" to="(270,420)"/>
+    <wire from="(350,380)" to="(380,380)"/>
+    <wire from="(260,230)" to="(280,230)"/>
+    <wire from="(430,220)" to="(450,220)"/>
+    <wire from="(430,320)" to="(450,320)"/>
+    <wire from="(270,320)" to="(320,320)"/>
+    <wire from="(280,230)" to="(280,400)"/>
+    <wire from="(320,230)" to="(320,250)"/>
+    <wire from="(350,380)" to="(350,400)"/>
+    <wire from="(320,250)" to="(330,250)"/>
+    <wire from="(320,290)" to="(330,290)"/>
+    <wire from="(260,320)" to="(270,320)"/>
+    <wire from="(430,220)" to="(430,270)"/>
+    <wire from="(430,320)" to="(430,400)"/>
+    <wire from="(270,420)" to="(380,420)"/>
+    <wire from="(320,290)" to="(320,320)"/>
+    <wire from="(280,230)" to="(320,230)"/>
+    <wire from="(390,270)" to="(430,270)"/>
+    <wire from="(280,400)" to="(350,400)"/>
     <comp lib="0" loc="(260,230)" name="Pin">
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(390,270)" name="XOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(450,320)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(260,320)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(450,220)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(260,320)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="1" loc="(430,400)" name="AND Gate">
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
 </project>
