@@ -59,5 +59,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <comp lib="1" loc="(340,200)" name="AND Gate"/>
   </circuit>
 </project>
