@@ -59,7 +59,49 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <comp loc="(390,290)" name="Registradores"/>
+    <wire from="(440,360)" to="(630,360)"/>
+    <wire from="(440,270)" to="(630,270)"/>
+    <wire from="(240,340)" to="(360,340)"/>
+    <wire from="(240,360)" to="(360,360)"/>
+    <wire from="(730,220)" to="(730,310)"/>
+    <wire from="(690,310)" to="(730,310)"/>
+    <wire from="(250,480)" to="(420,480)"/>
+    <wire from="(400,180)" to="(400,260)"/>
+    <wire from="(240,520)" to="(670,520)"/>
+    <wire from="(630,330)" to="(630,360)"/>
+    <wire from="(320,280)" to="(360,280)"/>
+    <wire from="(420,390)" to="(420,480)"/>
+    <wire from="(630,270)" to="(630,310)"/>
+    <wire from="(320,220)" to="(730,220)"/>
+    <wire from="(240,180)" to="(400,180)"/>
+    <wire from="(630,310)" to="(650,310)"/>
+    <wire from="(630,330)" to="(650,330)"/>
+    <wire from="(690,330)" to="(760,330)"/>
+    <wire from="(380,390)" to="(380,440)"/>
+    <wire from="(320,220)" to="(320,280)"/>
+    <wire from="(250,440)" to="(380,440)"/>
+    <wire from="(670,340)" to="(670,520)"/>
+    <comp loc="(690,310)" name="ULA"/>
+    <comp lib="0" loc="(240,520)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp loc="(440,360)" name="Registradores"/>
+    <comp lib="0" loc="(250,480)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(240,340)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(240,360)" name="Pin">
+      <a name="width" val="5"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(250,440)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(240,180)" name="Clock"/>
   </circuit>
   <circuit name="ULA">
     <a name="circuit" val="ULA"/>
