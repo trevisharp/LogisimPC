@@ -1,0 +1,30 @@
+1.mov <con> <reg>	| 100c cccc cccr rrrr	[OK]
+2.mov <reg> <reg>	| 1010 00rr rrrr rrrr	izi
+3.add <reg> <reg>	| 0010 00rr rrrr rrrr	[OK]
+4.sub <reg> <reg>	| 0010 01rr rrrr rrrr	izi
+5.mul <reg> <reg>	| 0010 10rr rrrr rrrr	izi
+6.div <reg> <reg>	| 0010 11rr rrrr rrrr	izi
+7.shl <reg> <reg>	| 0011 00rr rrrr rrrr	izi
+8.shr <reg> <reg>	| 0011 01rr rrrr rrrr	izi
+9.and <reg> <reg>	| 0011 10rr rrrr rrrr	izi
+10.or  <reg> <reg>	| 0011 11rr rrrr rrrr	izi
+11.not <reg>		| 1010 10rr rrrx xxxx	opa
+12.cmp <reg> <reg>	| 1010 01rr rrrr rrrr	opa
+13.je  <label>		| 1100 llll llll llll	opa
+14.jne <label>		| 1101 llll llll llll	opa
+15.jg  <label>		| 1110 llll llll llll	opa
+16.jmp <label>		| 1111 llll llll llll	opa
+17.loa <mem> <reg>	| 010m mmmm mmmr rrrr	opa
+18.str <mem> <reg>	| 011m mmmm mmmr rrrr	opa
+19.push <reg>		| 1010 11rr rrrx xxxx	opa
+20.pop <reg>		| 1011 00rr rrrx xxxx	opa
+21.nop			| 1011 01xx xxxx xxxx	izi
+
+<reg> -> 5 bits
+<label> -> 12 bits
+<mem> -> 8 bits
+<con> -> 8 bits
+
+mov 5 $1		1000 0000 0101 0001
+mov 7 $0		1000 0000 0111 0000
+add $0 $1		0010 0000 0000 0001
