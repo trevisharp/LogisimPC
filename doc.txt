@@ -14,11 +14,11 @@
 14.jne <label>		| 1101 llll llll llll	opa
 15.jg  <label>		| 1110 llll llll llll	opa
 16.jmp <label>		| 1111 llll llll llll	opa
-17.loa <mem> <reg>	| 010m mmmm mmmr rrrr	opa
-18.str <mem> <reg>	| 011m mmmm mmmr rrrr	opa
+17.loa <reg> <reg>	| 010x xxrr rrrr rrrr	opa
+18.str <reg> <reg>	| 011x xxrr rrrr rrrr	opa
 19.push <reg>		| 1010 11rr rrrx xxxx	opa
 20.pop <reg>		| 1011 00rr rrrx xxxx	opa
-21.nop			| 1011 01xx xxxx xxxx	izi
+21.nop			    | 1011 01xx xxxx xxxx	izi
 
 <reg> -> 5 bits
 <label> -> 12 bits
