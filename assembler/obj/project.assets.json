@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\assembler\\assembler.csproj",
+      "projectUniqueName": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\PCzao\\LogisimPC\\assembler\\assembler.csproj",
       "projectName": "assembler",
-      "projectPath": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\assembler\\assembler.csproj",
+      "projectPath": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\PCzao\\LogisimPC\\assembler\\assembler.csproj",
       "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\assembler\\obj\\",
+      "outputPath": "C:\\Users\\leona\\Desktop\\Processing\\Compiuties\\PCzao\\LogisimPC\\assembler\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",

@@ -31,7 +31,7 @@ foreach (var line in lines.Where(line => line[line.Length - 1] != ':'))
     writer.WriteLine(code);
 }
 
-writer.WriteLine((4096-linecount).ToString() + "*7400");
+writer.WriteLine((4096-linecount).ToString() + "*0000");
 
 writer.Close();
 reader.Close();
@@ -127,7 +127,7 @@ string tocomplang(string assembly)
             n += int.Parse(asmargs[1].Substring(1)) << 5;
             return tohex(n);
         case "nop":
-            return "7400";
+            return "0000";
 
         dictadd:
             n += dic[asmargs[1]];

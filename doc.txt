@@ -9,7 +9,7 @@
 9.and <reg> <reg>	| 0011 10rr rrrr rrrr	[OK]
 10.or  <reg> <reg>	| 0011 11rr rrrr rrrr	[OK]
 11.not <reg>		| 1010 10rr rrrx xxxx	[OK]
-12.cmp <reg> <reg>	| 1010 01rr rrrr rrrr	opa
+12.cmp <reg> <reg>	| 1010 01rr rrrr rrrr	[OK]
 13.je  <label>		| 1100 llll llll llll	opa
 14.jne <label>		| 1101 llll llll llll	opa
 15.jg  <label>		| 1110 llll llll llll	opa
@@ -18,7 +18,7 @@
 18.str <reg> <reg>	| 011x xxrr rrrr rrrr	opa
 19.push <reg>		| 1010 11rr rrrx xxxx	opa
 20.pop <reg>		| 1011 00rr rrrx xxxx	opa
-21.nop			| 1011 01xx xxxx xxxx	[OK]
+21.nop			    | 0000 0000 0000 0000	[OK]
 
 <reg> -> 5 bits
 <label> -> 12 bits
