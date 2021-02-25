@@ -10,10 +10,10 @@
 10.or  <reg> <reg>	| 0011 11rr rrrr rrrr	[OK]
 11.not <reg>		| 1010 10rr rrrx xxxx	[OK]
 12.cmp <reg> <reg>	| 1010 01rr rrrr rrrr	[OK]
-13.je  <label>		| 1100 llll llll llll	opa
-14.jne <label>		| 1101 llll llll llll	opa
-15.jg  <label>		| 1110 llll llll llll	opa
-16.jmp <label>		| 1111 llll llll llll	opa
+13.je  <label>		| 1100 llll llll llll	[OK]
+14.jne <label>		| 1101 llll llll llll	[OK]
+15.jg  <label>		| 1110 llll llll llll	[OK]
+16.jmp <label>		| 1111 llll llll llll	[OK]
 17.loa <reg> <reg>	| 010x xxrr rrrr rrrr	opa
 18.str <reg> <reg>	| 011x xxrr rrrr rrrr	opa
 19.push <reg>		| 1010 11rr rrrx xxxx	opa
