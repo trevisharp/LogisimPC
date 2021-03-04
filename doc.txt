@@ -14,8 +14,8 @@
 14.jne <label>		| 1101 llll llll llll	[OK]
 15.jg  <label>		| 1110 llll llll llll	[OK]
 16.jmp <label>		| 1111 llll llll llll	[OK]
-17.loa <reg> <reg>	| 010x xxrr rrrr rrrr	opa
-18.str <reg> <reg>	| 011x xxrr rrrr rrrr	opa
+17.loa <reg> <reg>	| 010x xxrr rrrr rrrr	[OK]
+18.str <reg> <reg>	| 011x xxrr rrrr rrrr	[OK]
 19.push <reg>		| 1010 11rr rrrx xxxx	opa
 20.pop <reg>		| 1011 00rr rrrx xxxx	opa
 21.nop			    | 0000 0000 0000 0000	[OK]
