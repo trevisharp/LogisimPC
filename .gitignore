@@ -37,3 +37,8 @@ assembler/bin/Debug/net5.0/assembler.deps.json
 assembler/bin/Debug/net5.0/assembler.deps.json
 assembler/bin/Debug/net5.0/assembler.dll
 assembler/bin/Debug/net5.0/assembler.deps.json
+assembler/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+assembler/obj/Debug/net5.0/assembler.AssemblyInfo.cs
+assembler/obj/Debug/net5.0/assembler.AssemblyInfoInputs.cache
+assembler/obj/Debug/net5.0/assembler.csprojAssemblyReference.cache
+assembler/obj/Debug/net5.0/assembler.GeneratedMSBuildEditorConfig.editorconfig
