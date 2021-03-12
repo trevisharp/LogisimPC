@@ -1,3 +1,4 @@
+ISA
 1.mov <con> <reg>	| 100c cccc cccr rrrr	[OK]
 2.mov <reg> <reg>	| 1010 00rr rrrr rrrr	[OK]
 3.add <reg> <reg>	| 0010 00rr rrrr rrrr	[OK]
@@ -8,16 +9,16 @@
 8.shr <reg> <reg>	| 0011 01rr rrrr rrrr	[OK]
 9.and <reg> <reg>	| 0011 10rr rrrr rrrr	[OK]
 10.or  <reg> <reg>	| 0011 11rr rrrr rrrr	[OK]
-11.not <reg>		| 1010 10rr rrrx xxxx	ops
+11.not <reg>		| 1010 10xx xxxr rrrr   [arrumar]
 12.cmp <reg> <reg>	| 1010 01rr rrrr rrrr	[OK]
 13.je  <label>		| 1100 llll llll llll	[OK]
 14.jne <label>		| 1101 llll llll llll	[OK]
 15.jg  <label>		| 1110 llll llll llll	[OK]
 16.jmp <label>		| 1111 llll llll llll	[OK]
-17.loa <reg> <reg>	| 010x xxrr rrrr rrrr	[OK]
-18.str <reg> <reg>	| 011x xxrr rrrr rrrr	[OK]
-19.push <reg>		| 1010 11rr rrrx xxxx	opa
-20.pop <reg>		| 1011 00rr rrrx xxxx	opa
+17.loa <reg> <reg>	| 0101 00rr rrrr rrrr	[OK]
+18.str <reg> <reg>	| 0111 00rr rrrr rrrr	[OK]
+19.call <label>		| 1011 llll llll llll   [OK]
+20.ret      		| 1010 11xx xxxx xxxx   [OK]
 21.nop			    | 0000 0000 0000 0000	[OK]
 
 <reg> -> 5 bits
@@ -29,3 +30,9 @@ mov 5 $1		1000 0000 0101 0001
 mov 7 $0		1000 0000 0111 0000
 add $0 $1		0010 0000 0000 0001
 
+
+
+criar uma função drawsquare, parâmetros:
+    -registrador $0: posição x do canto esquerdo superior (0 - 31)
+    -registrador $1: posição y do canto esquerdo superiro (0 - 31)
+    -registrador $2: lado do quadrado

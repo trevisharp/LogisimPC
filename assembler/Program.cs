@@ -15,7 +15,11 @@ var dic = new Dictionary<string, int>();
 var lines = new List<string>();
 
 while (!reader.EndOfStream)
-    lines.Add(reader.ReadLine());
+{
+    string line = reader.ReadLine();
+    if (line.Trim() != string.Empty)
+        lines.Add(line);
+}
 
 linecount = 0;
 foreach (var line in lines)
@@ -113,18 +117,16 @@ string tocomplang(string assembly)
             n = 15 << 12;
             goto dictadd;
         case "loa":
-            n = 2 << 13;
+            n = 5 << 12;
             goto addregisters;
         case "str":
-            n = 3 << 13;
+            n = 7 << 12;
             goto addregisters;
-        case "push":
+        case "call":
+            n = 11 << 12;
+            goto dictadd;
+        case "ret":
             n = 43 << 10;
-            n += int.Parse(asmargs[1].Substring(1)) << 5;
-            return tohex(n);
-        case "pop":
-            n = 44 << 10;
-            n += int.Parse(asmargs[1].Substring(1)) << 5;
             return tohex(n);
         case "nop":
             return "0000";

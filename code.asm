@@ -1,3 +1,10 @@
+    mov 255 $16
+    mov 255 $17
+    call drawinallcolumns
+end:
+    jmp end
+
+drawinallcolumns:
     mov 0 $3
     mov 0 $4
     mov 32 $5
@@ -20,13 +27,13 @@
     mov 3 $1
     sub $28 $1
     mov 1 $1
-    str $1 $28
-desenha:
+    str $16 $28
+    str $17 $29
     str $1 $31
-    str $3 $31
+desenha:
     add $4 $1
     str $4 $30
     cmp $5 $4
     jg desenha
-end:
-    jmp end    
+    str $3 $31
+    ret
