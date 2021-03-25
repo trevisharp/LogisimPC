@@ -36,3 +36,20 @@ criar uma função drawsquare, parâmetros:
     -registrador $0: posição x do canto esquerdo superior (0 - 31)
     -registrador $1: posição y do canto esquerdo superiro (0 - 31)
     -registrador $2: lado do quadrado
+
+
+drawhorizontalline:
+    desenha uma linha horizontal
+    parâmetros:
+        $0: vetor da imagem
+        $1: posição x
+        $2: posição y
+        $3: comprimento
+
+drawverticalline:
+    desenha uma linha vertical
+    parâmetros:
+        $0: vetor da imagem
+        $1: posição x
+        $2: posição y
+        $3: altura
