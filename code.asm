@@ -1,5 +1,9 @@
     mov 255 $16
-    mov 255 $17
+    mov 129 $17
+    mov 129 $18
+    mov 129 $19
+    mov 129 $20
+    mov 255 $21
     call drawinallcolumns
 end:
     jmp end
@@ -7,8 +11,8 @@ end:
 drawinallcolumns:
     mov 0 $3
     mov 0 $4
-    mov 32 $5
-    mov 10 $0
+    mov 5 $5
+    mov 1 $0
     mov 60 $31
     mul $31 $0
     mul $31 $0
