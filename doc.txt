@@ -1,7 +1,7 @@
 ISA
 1.mov <con> <reg>	| 100c cccc cccr rrrr	[OK]
 2.mov <reg> <reg>	| 1010 00rr rrrr rrrr	[OK]
-3.add <reg> <reg>	| 0010 00rr rrrr rrrr	[OK]
+3.add <reg> <reg>	| 0010 00rr rrrr rrrr	[OK] Salva no primeiro
 4.sub <reg> <reg>	| 0010 01rr rrrr rrrr	[OK]
 5.mul <reg> <reg>	| 0010 10rr rrrr rrrr	[OK]
 6.div <reg> <reg>	| 0010 11rr rrrr rrrr	[OK]
@@ -16,7 +16,7 @@ ISA
 15.jg  <label>		| 1110 llll llll llll	[OK]
 16.jmp <label>		| 1111 llll llll llll	[OK]
 17.loa <reg> <reg>	| 0101 00rr rrrr rrrr	[OK]
-18.str <reg> <reg>	| 0111 00rr rrrr rrrr	[OK]
+18.str <reg> <reg>	| 0111 00rr rrrr rrrr	[OK] O segundo é o endereço, o primeiro é o valor
 19.call <label>		| 1011 llll llll llll   [OK]
 20.ret      		| 1010 11xx xxxx xxxx   [OK]
 21.nop			    | 0000 0000 0000 0000	[OK]
