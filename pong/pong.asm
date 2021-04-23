@@ -10,6 +10,12 @@ main:
     mov 10 $3
     mov 100 $0
     call drawhorizontalline
+    
+    mov 100 $0
+    mov 2 $1
+    mov 5 $2
+    mov 20 $3
+    call drawverticalline
 
     mov 100 $0
     call draw
@@ -19,6 +25,71 @@ main:
 
 end:
     jmp end
+
+drawverticalline:
+    mov 2 $23
+    mul $1 $23
+    add $0 $1
+    mov 15 $25
+    mov $26 $2
+    cmp $26 $25
+    jg vlify15
+    mov 16 $25
+    mov $8 $2
+    add $8 $3
+    cmp $25 $8
+    jg vlelseif
+    jmp vlelse
+vlify15:
+    mov 1 $7
+    mov $30 $2
+    mov $31 $3
+    sub $30 $25
+    call calculeverticalvalue
+    add $7 $0
+    str $22 $7
+    jmp verticallineend
+vlelseif:
+    mov $30 $2
+    mov $31 $3
+    call calculeverticalvalue
+    str $22 $0
+    jmp verticallineend
+vlelse:
+    mov 1 $9
+    mov $30 $2
+    mov 16 $31
+    sub $31 $2
+    call calculeverticalvalue
+    str $22 $0
+    mov $29 $3
+    sub $29 $31
+    mov $31 $29
+    call calculeverticalvalue
+    add $0 $9
+    str $22 $9
+verticallineend:
+    ret
+calculeverticalvalue:
+    mov 1 $21 //+1
+    mov 1 $22 
+    mov 0 $24 
+    mov 2 $23 //*2
+loopverticalline1:
+    mul $22 $23
+    add $22 $21
+    sub $31 $21
+    cmp $31 $24
+    jne loopverticalline1
+loopvertivalline2:
+    mul $22 $23
+    sub $30 $21
+    cmp $30 $24
+    jne loopvertivalline2
+
+    ret
+    
+  
 
 drawhorizontalline:
     mov 15 $25
@@ -74,9 +145,6 @@ drawhorizontalline_loop2:
     jmp drawhorizontalline_end
 
 drawhorizontalline_end:
-    ret
-
-drawverticalline:
     ret
 
 drawrect:
